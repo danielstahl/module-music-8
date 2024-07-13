@@ -23,46 +23,41 @@ function ImportAudio(index, channel, trackName, fileName, lastInFolder)
   reaper.SetMediaItemTakeInfo_Value(take, "I_CHANMODE", channel + 64 + 2)
 end
 
-audioFile = "/Users/danielstahl/Documents/Music/Pieces/Ambient Music/Ambient Music 9/stage/ambientMusic9Score-v1.caf"
+audioFile = "/Users/danielstahl/Documents/Music/Pieces/Module Music/Module Music 8/stage/moduleMusic8Score-v1.caf"
 
-LOW_FM1_TRACK = "Low Fm1"
-MIDDLE_FM1_TRACK = "Middle Fm1"
-HIGH_FM1_TRACK = "High Fm1"
-LOW_FM2_TRACK = "Low Fm2"
-MIDDLE_FM2_TRACK = "Middle Fm2"
-HIGH_FM2_TRACK = "High Fm2"
-LOW_NOISE_TRACK = "Low Noise"
-MIDDLE_NOISE_TRACK = "Middle Noise"
-HIGH_NOISE_TRACK = "High Noise"
+CreateFolder(0, "Low Fm 1")
+ImportAudio(1, 1, "Low Fm 1 Clean", audioFile, false)
+ImportAudio(2, 3, "Low Fm 1 Effect", audioFile, true)
 
-CreateFolder(0, "Sub Sound")
-ImportAudio(1, 1, "Sub Sound Effect", audioFile, false)
-ImportAudio(2, 3, "Sub Sound Clean", audioFile, true)
+CreateFolder(3, "Middle Fm 1")
+ImportAudio(4, 5, "Middle Fm 1 Clean", audioFile, false)
+ImportAudio(5, 7, "Middle Fm 1 Effect", audioFile, true)
 
-CreateFolder(3, "Sub Noise")
-ImportAudio(4, 5, "Sub Noise Effect", audioFile, false)
-ImportAudio(5, 7, "Sub Noise Clean", audioFile, true)
+CreateFolder(6, "High Fm 1")
+ImportAudio(7, 9, "High Fm 1 Clean", audioFile, false)
+ImportAudio(8, 11, "High Fm 1 Effect", audioFile, true)
 
-CreateFolder(6, "Low Sound")
-ImportAudio(7, 9, "Low Sound Effect", audioFile, false)
-ImportAudio(8, 11, "Low Sound Clean", audioFile, true)
 
-CreateFolder(9, "Low Noise")
-ImportAudio(10, 13, "Low Noise Effect", audioFile, false)
-ImportAudio(11, 15, "Low Noise Clean", audioFile, true)
+CreateFolder(9, "Low Fm 2")
+ImportAudio(10, 13, "Low Fm 2 Clean", audioFile, false)
+ImportAudio(11, 15, "Low Fm 2 Effect", audioFile, true)
 
-CreateFolder(12, "Middle Sound")
-ImportAudio(13, 17, "Middle Sound Effect", audioFile, false)
-ImportAudio(14, 19, "Middle Sound Clean", audioFile, true)
+CreateFolder(12, "Middle Fm 2")
+ImportAudio(13, 17, "Middle Fm 2 Clean", audioFile, false)
+ImportAudio(14, 19, "Middle Fm 2 Effect", audioFile, true)
 
-CreateFolder(15, "Middle Noise")
-ImportAudio(16, 21, "Middle Noise Effect", audioFile, false)
-ImportAudio(17, 23, "MIddle Noise Clean", audioFile, true)
+CreateFolder(15, "High Fm 2")
+ImportAudio(16, 21, "High Fm 2 Clean", audioFile, false)
+ImportAudio(17, 23, "High Fm 2 Effect", audioFile, true)
 
-CreateFolder(18, "High Sound")
-ImportAudio(19, 25, "High Sound Effect", audioFile, false)
-ImportAudio(20, 27, "High Sound Clean", audioFile, true)
+CreateFolder(18, "Low Noise")
+ImportAudio(19, 25, "Low Noise Clean", audioFile, false)
+ImportAudio(20, 27, "Low Noise Effect", audioFile, true)
 
-CreateFolder(21, "High Noise")
-ImportAudio(22, 29, "High Noise Effect", audioFile, false)
-ImportAudio(23, 31, "High Noise Clean", audioFile, true)
+CreateFolder(21, "Middle Fm 2")
+ImportAudio(22, 29, "Middle Noise Clean", audioFile, false)
+ImportAudio(23, 31, "Middle Noise Effect", audioFile, true)
+
+CreateFolder(24, "High Noise")
+ImportAudio(25, 33, "High Noise Clean", audioFile, false)
+ImportAudio(26, 35, "High Noise Effect", audioFile, true)
